@@ -3,8 +3,8 @@
 }
 
 html,body {
-  min-height:93vh;
-  height:93vh;
+  min-height:92vh;
+  height:92vh;
   background-size:cover;
   background-position:top center;
   font-family:helvetica neue, helvetica, arial, sans-serif;
@@ -98,7 +98,6 @@ html,body {
   position:relative;
   z-index:0;
   h1 {
-    padding:75px 0 30px 0;
     text-align:center;
     font-size:30px;
     line-height:30px;
@@ -108,6 +107,11 @@ html,body {
     margin:0 auto;
     padding:0;
     text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 55px;
     .button {
       display:inline-block;
       text-align:center;
@@ -118,6 +122,7 @@ html,body {
       background-color:#efefef;
       border-radius:3px;
       box-shadow:0 1px 2px rgba(0,0,0,.3);
+      max-height: 50px;
       cursor:pointer;
       &:hover {
         color:white;
@@ -125,6 +130,11 @@ html,body {
       }
     }
   } 
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
 }
 
 
