@@ -13,6 +13,7 @@ const icon = L.icon({
 });
 const marker = L.marker([0, 0], { icon: icon}).addTo(map);
 const api_url = 'https://api.wheretheiss.at/v1/satellites/25544';
+let firstTime = true;
 
 async function getISS() {
   // Fetch data from WTIA API
@@ -20,6 +21,10 @@ async function getISS() {
   const data = await response.json();
   const {latitude, longitude, altitude, velocity, visibility} = data;
   marker.setLatLng([latitude, longitude]);
+  if (firstTime) {
+    map.setView([latitude, longitude], 3);
+    firstTime = false;
+  }
   // Update DOM elements with data and update map
   document.getElementById('latitude').textContent = latitude;
   document.getElementById('longitude').textContent = longitude;
@@ -40,3 +45,18 @@ L.terminator().addTo(map)
 // Fetch data every 1 second
 getISS();
 setInterval(getISS, 1000);
+
+const infopanel = document.getElementById('issinfo');
+const modalpanel = document.getElementById('modal-container');
+infopanel.addEventListener("click", function(){
+  const modal = document.getElementById('modal-container');
+  modal.removeAttribute('class');
+  modal.classList.add("three");
+  document.body.classList.add('modal-active');
+}); 
+
+modalpanel.addEventListener("click", function(){
+  const modal = document.getElementById('modal-container');
+  modal.classList.add('out');
+  body.removeAttribute('class');
+}); 
