@@ -44,7 +44,7 @@ L.terminator().addTo(map)
 
 // Fetch data every 1 second
 getISS();
-setInterval(getISS, 1000);
+//setInterval(getISS, 1000);
 
 // Load modal with ISS info on click of button 
 const infopanel = document.getElementById('issinfo');
