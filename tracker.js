@@ -46,6 +46,7 @@ L.terminator().addTo(map)
 getISS();
 setInterval(getISS, 1000);
 
+// Load modal with ISS info on click of button 
 const infopanel = document.getElementById('issinfo');
 const modalpanel = document.getElementById('modal-container');
 infopanel.addEventListener("click", function(){
@@ -55,6 +56,7 @@ infopanel.addEventListener("click", function(){
   document.body.classList.add('modal-active');
 }); 
 
+// Close modal when clicking anywhere on the page
 modalpanel.addEventListener("click", function(){
   const modal = document.getElementById('modal-container');
   modal.classList.add('out');
