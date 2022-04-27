@@ -68,27 +68,13 @@
 				<div class="menu-item">
 					<a href="https://www.danielwinters.dev" target="_blank" class="menu-link">
 						<div class="menu-img online">
-							<img src="assets/img/user/profile.jpg" alt="Profile" height="60" />
+							<img src="assets/img/author/profile.jpg" alt="Profile" height="60" />
 						</div>
 						<div class="menu-text d-sm-block d-none">danielwinters.dev</div>
 					</a>
 				</div>
 			</div>
 			<!-- END menu -->
-			
-			<!-- BEGIN menu-search -->
-			<form class="menu-search" method="POST" name="header_search_form">
-				<div class="menu-search-container">
-					<div class="menu-search-icon"><i class="bi bi-search"></i></div>
-					<div class="menu-search-input">
-						<input type="text" class="form-control form-control-lg" placeholder="Search menu..." />
-					</div>
-					<div class="menu-search-icon">
-						<a href="#" data-toggle-class="app-header-menu-search-toggled" data-toggle-target=".app"><i class="bi bi-x-lg"></i></a>
-					</div>
-				</div>
-			</form>
-			<!-- END menu-search -->
 		</div>
 		<!-- END #header -->
 		
@@ -440,14 +426,14 @@
 						<div class="card-body">
 							<!-- BEGIN title -->
 							<div class="d-flex fw-bold small mb-3">
-								<span class="flex-grow-1">SITE VISITORS</span>
+								<span class="flex-grow-1">CURRENT LOCATION</span>
 								<a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
 							</div>
 							<!-- END title -->
 							<!-- BEGIN stat-lg -->
 							<div class="row align-items-center mb-2">
 								<div class="col-7">
-									<h3 class="mb-0">4.2m</h3>
+									<h3 class="mb-0">Australia</h3>
 								</div>
 								<div class="col-5">
 									<div class="mt-n2" data-render="apexchart" data-type="bar" data-title="Visitors" data-height="30"></div>
@@ -456,8 +442,8 @@
 							<!-- END stat-lg -->
 							<!-- BEGIN stat-sm -->
 							<div class="small text-white text-opacity-50 text-truncate">
-								<i class="fa fa-chevron-up fa-fw me-1"></i> 33.3% more than last week<br />
-								<i class="far fa-user fa-fw me-1"></i> 45.5% new visitors<br />
+								<i class="far fa-times-circle fa-fw me-1"></i><span id="latitude"></span>°<br />
+								<i class="far fa-times-circle fa-fw me-1"></i><span id="longitude"></span>°<br />
 								<i class="far fa-times-circle fa-fw me-1"></i> 3.25% bounce rate
 							</div>
 							<!-- END stat-sm -->
@@ -485,14 +471,14 @@
 						<div class="card-body">
 							<!-- BEGIN title -->
 							<div class="d-flex fw-bold small mb-3">
-								<span class="flex-grow-1">STORE SALES</span>
+								<span class="flex-grow-1">CURRENT ALTITUDE</span>
 								<a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
 							</div>
 							<!-- END title -->
 							<!-- BEGIN stat-lg -->
 							<div class="row align-items-center mb-2">
 								<div class="col-7">
-									<h3 class="mb-0">$35.2K</h3>
+									<h3 class="mb-0"><span id="altitude"></span> km</h3>
 								</div>
 								<div class="col-5">
 									<div class="mt-n2" data-render="apexchart" data-type="line" data-title="Visitors" data-height="30"></div>
@@ -530,7 +516,7 @@
 						<div class="card-body">
 							<!-- BEGIN title -->
 							<div class="d-flex fw-bold small mb-3">
-								<span class="flex-grow-1">NEW MEMBERS</span>
+								<span class="flex-grow-1">CURRENT SPEED</span>
 								<a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
 							</div>
 							<!-- END title -->
@@ -575,7 +561,7 @@
 						<div class="card-body">
 							<!-- BEGIN title -->
 							<div class="d-flex fw-bold small mb-3">
-								<span class="flex-grow-1">BANDWIDTH</span>
+								<span class="flex-grow-1">CURRENT VISIBILITY</span>
 								<a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
 							</div>
 							<!-- END title -->
