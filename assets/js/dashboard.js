@@ -62,7 +62,7 @@ async function getISS() {
   
 }
 getISS();
-setInterval(getISS, 1000);
+setInterval(getISS, 2000);
 
 const feed = document.getElementById('rss-feeds');
 
