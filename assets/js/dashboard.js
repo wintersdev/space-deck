@@ -79,6 +79,6 @@ function parseXml(xml)
 	$("#rss-feeds").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#rss-feeds").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text()+"</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ISS</span></td></tr>");
+		$("#rss-feeds").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ISS</span></td></tr>");
 	});  
   }

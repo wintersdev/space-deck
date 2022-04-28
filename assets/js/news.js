@@ -15,7 +15,7 @@ function parseXmlBreaking(xml)
 	$("#nasa-breaking").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#nasa-breaking").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
+		$("#nasa-breaking").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
 	});  
   }
 
@@ -34,7 +34,7 @@ function parseXmlBreaking(xml)
     $("#nasa-education").html("");
     $(xml).find("item").each(function()
     {
-      $("#nasa-education").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
+      $("#nasa-education").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
     });  
     }
 
@@ -53,7 +53,7 @@ function parseXmlReports(xml)
 	$("#nasa-reports").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#nasa-reports").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
+		$("#nasa-reports").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
 	});  
   }
 
@@ -72,7 +72,7 @@ function parseXmlStation(xml)
 	$("#nasa-station").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#nasa-station").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
+		$("#nasa-station").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
 	});  
   }
 
@@ -91,7 +91,7 @@ function parseXmlKepler(xml)
 	$("#nasa-kepler").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#nasa-kepler").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
+		$("#nasa-kepler").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
 	});  
   }
 
@@ -110,7 +110,7 @@ function parseXmlChandra(xml)
 	$("#nasa-chandra").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#nasa-chandra").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
+		$("#nasa-chandra").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
 	});  
   }
 
@@ -129,7 +129,7 @@ function parseXmlISS(xml)
 	$("#nasa-iss").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#nasa-iss").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
+		$("#nasa-iss").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
 	});  
   }
 
@@ -148,7 +148,7 @@ function parseXmlBeyond(xml)
 	$("#nasa-beyond").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#nasa-beyond").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
+		$("#nasa-beyond").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
 	});  
   }
 
@@ -167,7 +167,7 @@ function parseXmlEarth(xml)
 	$("#nasa-earth").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#nasa-earth").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
+		$("#nasa-earth").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
 	});  
   }
 
@@ -186,7 +186,7 @@ function parseXmlAero(xml)
 	$("#nasa-aero").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#nasa-aero").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
+		$("#nasa-aero").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>NASA</span></td></tr>");
 	});  
   }
 
@@ -207,7 +207,7 @@ function parseXmlSpace(xml)
 	$("#esa-space").html("");
 	$(xml).find("item").each(function()
 	{
-		$("#esa-space").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
+		$("#esa-space").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
 	});  
   }
 
@@ -226,7 +226,7 @@ function parseXmlSpace(xml)
     $("#esa-earth").html("");
     $(xml).find("item").each(function()
     {
-      $("#esa-earth").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
+      $("#esa-earth").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
     });  
     }
 
@@ -245,7 +245,7 @@ function parseXmlSpaceflight(xml)
     $("#esa-spaceflight").html("");
     $(xml).find("item").each(function()
     {
-      $("#esa-spaceflight").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
+      $("#esa-spaceflight").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
     });  
     }
 
@@ -264,7 +264,7 @@ function parseXmlLaunchers(xml)
     $("#esa-launchers").html("");
     $(xml).find("item").each(function()
     {
-      $("#esa-launchers").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
+      $("#esa-launchers").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
     });  
     }
 
@@ -283,7 +283,7 @@ function parseXmlNavigation(xml)
     $("#esa-navigation").html("");
     $(xml).find("item").each(function()
     {
-      $("#esa-navigation").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
+      $("#esa-navigation").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
     });  
     }
 
@@ -302,7 +302,7 @@ function parseXmlScience(xml)
     $("#esa-science").html("");
     $(xml).find("item").each(function()
     {
-      $("#esa-science").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
+      $("#esa-science").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
     });  
     }
 
@@ -321,7 +321,7 @@ function parseXmlEngineering(xml)
     $("#esa-engineering").html("");
     $(xml).find("item").each(function()
     {
-      $("#esa-engineering").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
+      $("#esa-engineering").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
     });  
     }
 
@@ -340,7 +340,7 @@ function parseXmlOperations(xml)
     $("#esa-operations").html("");
     $(xml).find("item").each(function()
     {
-      $("#esa-operations").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
+      $("#esa-operations").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
     });  
     }
 
@@ -359,7 +359,7 @@ function parseXmlTelecom(xml)
     $("#esa-telecom").html("");
     $(xml).find("item").each(function()
     {
-      $("#esa-telecom").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
+      $("#esa-telecom").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
     });  
     }
 
@@ -378,9 +378,27 @@ function parseXmlEdu(xml)
     $("#esa-education").html("");
     $(xml).find("item").each(function()
     {
-      $("#esa-education").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text()+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
+      $("#esa-education").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>ESA</span></td></tr>");
     });  
     }
 
 // SPACE.COM FEED
 
+$(document).ready(function()
+  {
+    $.ajax({
+      type: "GET",
+      url: "https://intense-reef-87935.herokuapp.com/https://www.space.com/feeds/all",
+      dataType: "xml",
+      success: parseXmlSpaceCom
+     });
+  });
+    
+function parseXmlSpaceCom(xml)
+  {
+    $("#space-com").html("");
+    $(xml).find("item").each(function()
+    {
+      $("#space-com").append("<tr><td><a href='"+$(this).find("link").text()+"' target='_blank'><span class='d-flex align-items-center'><i class='bi bi-circle-fill fs-6px text-theme me-2'></i>"+$(this).find("title").text().substring(0, 40)+"...</span></a></td><td><small>"+$(this).find("pubDate").text().substring(0, 16)+"</small></td><td><span class='badge d-block bg-theme text-theme-900 rounded-0 pt-5px w-70px' style='min-height: 18px'>SPACE.COM</span></td></tr>");
+    });  
+    }
